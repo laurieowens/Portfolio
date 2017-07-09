@@ -1,0 +1,225 @@
+ 
+body {
+    background: url("../images/asanoha-400px.png") no-repeat left fixed;
+    background-color: #cccccc;
+    background-size: 960px;
+}
+ 
+.masthead {
+    position: relative;
+    color: white;
+    background-color: #ffffff;
+    border: 3px solid #cccccc;
+    width: 960px;
+    height: 90px;
+    padding: none;
+    float: left;
+    top: -20px;
+    left: -10px;
+
+}
+
+.namehead {
+    position: relative;
+    width: 300px;
+    height: 60px;   
+    color: white; 
+    padding-top: 2px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #4aaaa5;
+    bottom: -22px;
+    left: 10px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+  
+}
+
+.moreofme {
+    padding: 0 20px;
+    font-size: 17px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+nav {
+    float: right
+}
+
+.AboutMeHeader {
+  
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color:#4aaaa5;
+  
+}
+
+
+.container {
+
+  height: 460px;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  border: 2px solid #ffffff;
+  font-size: 15px;
+  width: 650px;
+  position: relative;
+  bottom: -30px;
+  left: 5px;
+  padding: none;
+  background: #ffffff;
+  float: left;
+}
+
+
+.ConnectWithMeHeader {
+  height: 150px;
+  width: 270px;
+  text-align: center;
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;;
+  position: relative;
+  top: -450px;
+  left: 665px;
+  padding: none;
+  background: #ffffff;
+  float: left;
+
+}
+
+
+
+
+
+
+
+.stickyfooter {
+  position:fixed;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12px;
+  color: #777777;
+  left: 0;
+  text-align: center;
+  bottom: 0;
+  height: 56px;
+  width: 960px;
+  border-top: 4px solid #4aaaa5; 
+  background-color: #666666;
+
+}
+
+#button {
+ background-color: #4aaaa5;
+ font-weight: bold;
+ color: #777777;
+ font-size: 20px;
+ color: white;
+}
+.comment{
+    bottom: 0;
+    left: 0;
+    background-color: #4aaaa5;
+    text-align: center;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+}
+.imagewrapper{
+  display: inline-block;
+    position: relative;
+    padding: none;
+    margin: 10px;
+    top: -20px;
+    left: 60px;
+    float: left;
+}
+
+.imagewrapper2{
+  display: inline-block;
+    position: relative;
+    margin: 10px;
+    top: -20px;
+    left: 60px;
+    float: left;
+}.imagewrapper3{
+  display: inline-block;
+    position: relative;
+    padding: none;
+    top: -30px;
+    left: 60px;
+    margin: 10px;
+    float: left;
+}.imagewrapper4{
+  display: inline-block;
+    position: relative;
+    padding:none;
+    top: -30px;
+    left: 60px;
+    margin: 10px;
+    float: left;
+}.imagewrapper5{
+  display: inline-block;
+    position: relative;
+    padding: none;
+    top: -40px;
+    left: 60px;
+    margin: 10px;
+    float: left;
+}
+
+
+
+
+
+.textonimage {  
+ position: relative;
+ background-color: 25px;
+ height: 20px;
+ width: 100%;
+ 
+}
+@media screen  and (max-width: 768px){
+
+ body { 
+  background-color: #333;
+}
+
+.ConnectWithMeHeader,
+.masthead,
+.container {
+   width: 600px;
+}
+
+
+
+
+
+@media screen  and (max-width: 980px){
+
+ body { 
+  background-color: #333;
+}
+
+.ConnectWithMeHeader,
+.masthead,
+.container {
+   width: 700px;
+}
+
+@media screen  and (max-width: 640px){
+
+ body { 
+  background-color: #333;
+}
+.namehead
+.moreofme,
+.ConnectWithMeHeader,
+.masthead,
+.container {
+   width: 400px;
+}
+
+  
+
+

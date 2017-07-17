@@ -1,11 +1,14 @@
+
   // Initialize Firebase
   var config = {
-      apiKey: "AIzaSyD4epD9MrhBlD5dqh3wgH5OTRj1cTdQDKM",
-      authDomain: "trainschedule-fad72.firebaseapp.com",
-      databaseURL: "https://trainschedule-fad72.firebaseio.com",
-      storageBucket: "trainschedule-fad72.appspot.com",
-      messagingSenderId: "753612370157"
+    apiKey: "AIzaSyD--mB6xrPTqxVjrSeZwXbm751kmVUmOmQ",
+    authDomain: "contactmeinfo-30b0d.firebaseapp.com",
+    databaseURL: "https://contactmeinfo-30b0d.firebaseio.com",
+    projectId: "contactmeinfo-30b0d",
+    storageBucket: "contactmeinfo-30b0d.appspot.com",
+    messagingSenderId: "978601821793"
   };
+
   firebase.initializeApp(config);
   //create variable to reference database
   var dataRef = firebase.database();
@@ -16,6 +19,7 @@
 
   //capture button click
   $("#submit-data").on("click", function(eventObject) {
+    console.log(name);
       eventObject.preventDefault();
       name = $("#name").val().trim();
       email = $("#email").val().trim();

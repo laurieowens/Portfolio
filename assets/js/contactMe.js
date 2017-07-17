@@ -19,30 +19,27 @@
 
   //capture button click
   $("#submit-data").on("click", function(eventObject) {
-    console.log(name);
       eventObject.preventDefault();
       name = $("#name").val().trim();
       email = $("#email").val().trim();
       message= $("#message").val();
+      If ($("#name").not(""))&& ($("#email").not("")) && ($("#message").not("")) {
       dataRef.ref().push({
           name: name,
           email: email,
           message: message,
           dateAdded: firebase.database.ServerValue.TIMESTAMP
       });
-      $('#myForm').trigger("reset");
+      $('#contact-form').trigger("reset");
       return false;
+}else{
+  console.log('no data!');
+}
+
   });
-  // append data for html
-  // dataRef.ref().on("child_added", function(childSnapshot) {
-  //     var trainName = childSnapshot.val().trainName;
-  //     var trainDest = childSnapshot.val().trainDest;
-  //     var firstTrainX = childSnapshot.val().firstTrainX;
-  //     var trainFreq = childSnapshot.val().trainFreq;
-  //     var firstTrainXconvert = moment(firstTrainX, "hh:mm").subtract(1, "years");
-  //     var firstToNowTX = moment().diff(moment(firstTrainXconvert), "minutes");
-  //     var tRemainder = firstToNowTX % trainFreq;
-  //     var minsAway = trainFreq - tRemainder;
-  //     var trainArrival = moment().add(minsAway, "minutes");
-  //     $("#trainInfo").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" + trainFreq + "</td><td>" + moment(trainArrival).format("hh:mm") + "</td><td>" + minsAway + "</td></tr>");
-  // });
+
+   if ($("#frm01").is(':hidden')) {
+      $("#frm01").show("slide", { direction: "down" }, 1000);
+    } else {
+      $("#frm01").hide(1000);
+

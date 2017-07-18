@@ -32,11 +32,33 @@
           dateAdded: firebase.database.ServerValue.TIMESTAMP
       });
       $('#contact-form').trigger("reset");
-      return false;
+
+
+      return alert("Thank you! I will return your message shortly.")
+      //return false;
+      //alert("Thank you! I will return your message shortly.")
       }else{
       alert('Please fill out form completely');
       }
 
   });
+
+  $(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
+});
 
 

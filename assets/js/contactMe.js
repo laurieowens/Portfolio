@@ -23,7 +23,8 @@
       name = $("#name").val().trim();
       email = $("#email").val().trim();
       message= $("#message").val();
-      If ($("#name").not(""))&& ($("#email").not("")) && ($("#message").not("")) {
+      console.log(name);
+      if (email!=""&&message!=""&&name!=""){
       dataRef.ref().push({
           name: name,
           email: email,
@@ -32,14 +33,10 @@
       });
       $('#contact-form').trigger("reset");
       return false;
-}else{
-  console.log('no data!');
-}
+      }else{
+      alert('Please fill out form completely');
+      }
 
   });
 
-   if ($("#frm01").is(':hidden')) {
-      $("#frm01").show("slide", { direction: "down" }, 1000);
-    } else {
-      $("#frm01").hide(1000);
 
